@@ -1,90 +1,94 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria Prac 3D WIT</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeria Prac 3D WIT</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#" class="logo">WIT 3D Gallery</a>
+      <div class="nav-links">
+        <a href="#about">O przedmiocie</a>
+        <a href="#gallery">Galeria</a>
+        <a href="#teachers">Prowadzący</a>
+      </div>
+    </nav>
+  </header>
 
-    <header>
-        <nav>
-            <h1>Galeria Prac 3D WIT</h1>
-
-            <ul>
-                <li><a href="#about">O przedmiocie</a></li>
-                <li><a href="#gallery">Galeria</a></li>
-                <li><a href="#teachers">Prowadzący</a></li>
-            </ul>
-        </nav>
-    </header>
-
+  <main>
     <section class="hero">
-        <h2>Najlepsze prace studentów Akademii WIT</h2>
-
-        <p>
-            Galeria prezentująca projekty tworzone przez studentów
-            kierunku Grafika w zakresie modelowania i wizualizacji 3D.
-        </p>
-
-        <a href="#gallery" class="button">
-            Zobacz galerię
-        </a>
+      <p class="eyebrow">Akademia WIT w Warszawie</p>
+      <h1>Galeria prac studentów grafiki 3D</h1>
+      <p>
+        Strona prezentuje wybrane projekty studentów kierunku Grafika:
+        modele 3D, wizualizacje, rendery oraz projekty koncepcyjne.
+      </p>
+      <a href="#gallery" class="btn">Zobacz prace</a>
     </section>
 
-    <section id="about">
-        <h2>O przedmiocie</h2>
-
-        <p>
-            Przedmiot Grafika 3D rozwija umiejętności modelowania,
-            teksturowania oraz tworzenia wizualizacji komputerowych.
-        </p>
+    <section id="about" class="section">
+      <h2>O przedmiocie</h2>
+      <p>
+        Przedmiot Grafika 3D rozwija umiejętności modelowania, teksturowania,
+        oświetlania scen oraz przygotowywania finalnych renderów. Studenci
+        uczą się łączyć wiedzę techniczną z estetyką obrazu cyfrowego.
+      </p>
     </section>
 
-    <section id="gallery">
+    <section id="gallery" class="section">
+      <div class="section-title">
         <h2>Galeria prac</h2>
+        <p>Filtruj projekty według kategorii.</p>
+      </div>
 
-        <div class="gallery-grid">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Wszystkie</button>
+        <button class="filter-btn" data-filter="model">Model 3D</button>
+        <button class="filter-btn" data-filter="render">Render</button>
+        <button class="filter-btn" data-filter="concept">Concept art</button>
+      </div>
 
-            <div class="card">
-                <img src="https://picsum.photos/400/300?1" alt="">
-                <h3>Projekt 1</h3>
-                <p>Jan Kowalski</p>
-            </div>
-
-            <div class="card">
-                <img src="https://picsum.photos/400/300?2" alt="">
-                <h3>Projekt 2</h3>
-                <p>Anna Nowak</p>
-            </div>
-
-            <div class="card">
-                <img src="https://picsum.photos/400/300?3" alt="">
-                <h3>Projekt 3</h3>
-                <p>Piotr Wiśniewski</p>
-            </div>
-
-        </div>
+      <div class="gallery-grid" id="galleryGrid"></div>
     </section>
 
-    <section id="teachers">
-        <h2>Prowadzący</h2>
-
-        <div class="teacher">
-            <h3>dr inż. Jan Nowak</h3>
-            <p>Specjalista grafiki komputerowej i modelowania 3D.</p>
-        </div>
+    <section id="teachers" class="section">
+      <h2>Prowadzący</h2>
+      <div class="teachers-grid">
+        <article class="teacher-card">
+          <h3>dr inż. Grzegorz Grodner</h3>
+          <p>
+            Prowadzący zajęcia związane z projektowaniem stron internetowych
+            oraz realizacją projektów studenckich.
+          </p>
+        </article>
+        <article class="teacher-card">
+          <h3>mgr Anna Kowalska</h3>
+          <p>
+            Specjalistka w obszarze grafiki komputerowej, kompozycji obrazu
+            oraz prezentacji cyfrowych projektów wizualnych.
+          </p>
+        </article>
+      </div>
     </section>
+  </main>
 
-    <footer>
-        <p>© 2025 Akademia WIT</p>
-    </footer>
+  <div class="modal" id="workModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">×</button>
+      <img id="modalImage" src="" alt="" />
+      <h3 id="modalTitle"></h3>
+      <p id="modalAuthor"></p>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
 
-    <script src="script.js"></script>
+  <footer>
+    <p>© 2025 Akademia WIT — projekt edukacyjny</p>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
-
-<!-- update -->
