@@ -1,51 +1,51 @@
 const works = [
   {
-    title: "Cyberpunk Vehicle",
+    title: "3D render (castle)",
     author: "Jan Kowalski",
-    category: "model",
-    semester: "Semestr 3",
-    image: "https://picsum.photos/800/600?random=1",
-    description: "Model futurystycznego pojazdu przygotowany jako projekt semestralny z grafiki 3D."
+    category: "render",
+    semester: "Semestr 2",
+    image: "images/work-1.jpg",
+    description: "Render zamku fantasy przygotowany jako projekt semestralny z grafiki 3D."
   },
   {
-    title: "Medieval Castle",
+    title: "3D render (modern interior)",
     author: "Anna Nowak",
     category: "render",
     semester: "Semestr 2",
-    image: "https://picsum.photos/800/600?random=2",
-    description: "Render sceny przedstawiającej zamek średniowieczny z oświetleniem atmosferycznym."
+    image: "images/work-2.webp",
+    description: "Wizualizacja nowoczesnego wnętrza z naciskiem na światło, materiały i kompozycję."
   },
   {
-    title: "Sci-Fi Helmet",
+    title: "3D cyberpunk vehicle",
     author: "Piotr Wiśniewski",
     category: "model",
     semester: "Semestr 3",
-    image: "https://picsum.photos/800/600?random=3",
-    description: "Projekt hełmu science fiction z detalami technicznymi i teksturami metalicznymi."
+    image: "images/work-3.avif",
+    description: "Model futurystycznego pojazdu w stylistyce cyberpunkowej."
   },
   {
-    title: "Fantasy Environment",
+    title: "SCI FI helmet",
     author: "Maria Zielińska",
-    category: "concept",
-    semester: "Semestr 1",
-    image: "https://picsum.photos/800/600?random=4",
-    description: "Koncepcja środowiska fantasy przygotowana jako baza do dalszego modelowania 3D."
-  },
-  {
-    title: "Modern Interior",
-    author: "Kamil Wójcik",
-    category: "render",
-    semester: "Semestr 2",
-    image: "https://picsum.photos/800/600?random=5",
-    description: "Wizualizacja nowoczesnego wnętrza z naciskiem na kompozycję, materiały i światło."
-  },
-  {
-    title: "Robot Character",
-    author: "Julia Lewandowska",
     category: "model",
     semester: "Semestr 3",
-    image: "https://picsum.photos/800/600?random=6",
-    description: "Model postaci robota stworzony z wykorzystaniem prostych brył i detali mechanicznych."
+    image: "images/work-4.jpg",
+    description: "Projekt hełmu science fiction z detalami technicznymi i materiałami metalicznymi."
+  },
+  {
+    title: "Robot character",
+    author: "Kamil Wójcik",
+    category: "model",
+    semester: "Semestr 3",
+    image: "images/work-5.jpg",
+    description: "Model postaci robota wykonany z wykorzystaniem prostych brył i detali mechanicznych."
+  },
+  {
+    title: "Fantasy environment",
+    author: "Julia Lewandowska",
+    category: "concept",
+    semester: "Semestr 1",
+    image: "images/work-6.jpg",
+    description: "Koncepcja środowiska fantasy przygotowana jako baza do projektu 3D."
   }
 ];
 
