@@ -222,24 +222,30 @@ body {
 }
 
 .teacher-card img {
-  width: 100%;
-  height: 260px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  margin: 24px auto 0;
   display: block;
 }
 
 .teacher-content {
-  padding: 18px;
+  padding: 20px;
+  text-align: center;
 }
 
 .teacher-content h3 {
-  margin-bottom: 8px;
-  color: #fff;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 1.1rem;
 }
 
 .teacher-content p {
   color: #cfd3dc;
   font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .modal {
