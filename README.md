@@ -1,15 +1,19 @@
 # wit-galeria-prac
 WIT 3D Gallery
+WIT 3D Gallery
 Autor
 
-Maciej Krasnodębski 22750
+Maciej Krasnodębski
 
-Opis projektu:
+Opis projektu
+
 WIT 3D Gallery to projekt strony internetowej prezentującej wybrane prace studentów kierunku Grafika Akademii WIT.
+
 Strona została przygotowana jako realizacja zadania semestralnego i pełni funkcję galerii projektów z zakresu grafiki 3D. Umożliwia przeglądanie prac, filtrowanie ich według kategorii oraz wyświetlanie szczegółowych informacji o projektach.
+
 Projekt został wykonany w wariancie podstawowym jako aplikacja frontendowa działająca lokalnie oraz opublikowana przy użyciu GitHub Pages.
 
-Funkcjonalności:
+Funkcjonalności
 Strona główna prezentująca galerię
 Opis przedmiotu
 Galeria prac studenckich
@@ -24,8 +28,7 @@ HTML5
 CSS3
 JavaScript (Vanilla JS)
 GitHub Pages
-
-Struktura projektu:
+Struktura projektu
 wit-galeria-prac/
 │
 ├── index.html
@@ -49,5 +52,9 @@ Projekt dostępny jest pod adresem:
 
 https://mac13jkan.github.io/wit-galeria-prac/#
 
-Cel projektu:
+
+
+Cel projektu
+
 Celem projektu było zaprojektowanie i implementacja responsywnej strony internetowej prezentującej prace studentów kierunku Grafika Akademii WIT w formie nowoczesnej galerii internetowej.
+
