@@ -117,3 +117,91 @@ modal.addEventListener("click", event => {
 });
 
 renderWorks();
+const teachers = [
+{
+name: "Dariusz Adamski",
+image: "https://www.wit.edu.pl/images/osoby/Dariusz-Adamski.jpg",
+profile: "https://www.wit.edu.pl/osoby/dariusz-adamski?ver=podglad",
+description: "Specjalista w zakresie projektowania graficznego i komunikacji wizualnej."
+},
+{
+name: "Zenon Balcer",
+image: "https://www.wit.edu.pl/images/osoby/Zenon-Balcer.jpg",
+profile: "https://www.wit.edu.pl/osoby/zenon-balcer?ver=podglad",
+description: "Prowadzi zajęcia związane z rysunkiem i warsztatem artystycznym."
+},
+{
+name: "Szymon Baran",
+image: "https://www.wit.edu.pl/images/osoby/Szymon-Baran.jpg",
+profile: "https://www.wit.edu.pl/osoby/szymon-baran?ver=podglad",
+description: "Specjalista grafiki cyfrowej i projektowania wizualnego."
+},
+{
+name: "Iwona Burnat",
+image: "https://www.wit.edu.pl/images/osoby/Iwona-Burnat.jpg",
+profile: "https://www.wit.edu.pl/osoby/iwona-burnat?ver=podglad",
+description: "Wykładowczyni związana z edukacją artystyczną i projektowaniem."
+},
+{
+name: "Grzegorz Grodner",
+image: "https://www.wit.edu.pl/images/osoby/Grzegorz-Grodner.jpg",
+profile: "https://www.wit.edu.pl/osoby/grzegorz-grodner?ver=podglad",
+description: "Prowadzi zajęcia z projektowania stron internetowych i aplikacji webowych."
+},
+{
+name: "Piotr Janowczyk",
+image: "https://www.wit.edu.pl/images/osoby/Piotr-Janowczyk.jpg",
+profile: "https://www.wit.edu.pl/osoby/piotr-janowczyk?ver=podglad",
+description: "Specjalista grafiki 3D i wizualizacji komputerowej."
+},
+{
+name: "Aneta Jaźwińska",
+image: "https://www.wit.edu.pl/images/osoby/Aneta-Ja%C5%BAwi%C5%84ska.jpg",
+profile: "https://www.wit.edu.pl/osoby/aneta-jazwinska?ver=podglad",
+description: "Projektantka komunikacji wizualnej i identyfikacji graficznej."
+},
+{
+name: "Justyna Kabala",
+image: "https://www.wit.edu.pl/images/osoby/Justyna-Kabala.jpg",
+profile: "https://www.wit.edu.pl/osoby/justyna-kabala?ver=podglad",
+description: "Specjalistka ilustracji i projektowania graficznego."
+},
+{
+name: "Krzysztof Kauza",
+image: "https://www.wit.edu.pl/images/osoby/Krzysztof-Kauza.jpg",
+profile: "https://www.wit.edu.pl/osoby/krzysztof-kauza?ver=podglad",
+description: "Prowadzi zajęcia związane z multimediami i animacją."
+},
+{
+name: "Anna Kłos",
+image: "https://www.wit.edu.pl/images/osoby/Anna-K%C5%82os.jpg",
+profile: "https://www.wit.edu.pl/osoby/anna-klos?ver=podglad",
+description: "Specjalistka typografii i projektowania publikacji."
+},
+{
+name: "Michał Kołodyński",
+image: "images/work-7.jpg",
+profile: "https://www.wit.edu.pl/osoby/michal-kolodynski?ver=podglad",
+description: "Wykładowca związany z projektowaniem cyfrowym i nowymi mediami."
+}
+];
+
+const teachersGrid = document.getElementById("teachersGrid");
+
+teachers.forEach(teacher => {
+const card = document.createElement("a");
+
+card.href = teacher.profile;
+card.target = "_blank";
+card.className = "teacher-card teacher-link";
+
+card.innerHTML = `
+<img src="${teacher.image}" alt="${teacher.name}">
+<div class="teacher-content">
+<h3>${teacher.name}</h3>
+<p>${teacher.description}</p>
+</div>
+`;
+
+teachersGrid.appendChild(card);
+});
